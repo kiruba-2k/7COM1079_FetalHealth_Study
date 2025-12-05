@@ -21,6 +21,7 @@ study_data$fetal_health <- factor(study_data$fetal_health,
                                   levels = c(1, 3), 
                                   labels = c("Normal", "Pathological"))
 
+
 # Check that we only have two levels now
 print("Table of Counts per Group:")
 print(table(study_data$fetal_health))
@@ -28,3 +29,16 @@ print(table(study_data$fetal_health))
 # Check the structure to ensure the variable type is 'Factor'
 print("Variable Structure:")
 str(study_data$fetal_health)
+
+# We calculate stats for each group to discuss in the "Analysis" section.
+
+stats_summary <- study_data %>%
+  group_by(fetal_health) %>%
+  summarise(
+    Count = n(),
+    Mean_HeartRate = mean(baseline.value, na.rm = TRUE),
+    SD_HeartRate = sd(baseline.value, na.rm = TRUE)
+  )
+
+print("Descriptive Statistics:")
+print(stats_summary)
