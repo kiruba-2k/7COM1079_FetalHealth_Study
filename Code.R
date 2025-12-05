@@ -42,3 +42,36 @@ stats_summary <- study_data %>%
 
 print("Descriptive Statistics:")
 print(stats_summary)
+
+
+# We create a subset just for the Normal group to plot its specific curve
+data_normal <- subset(study_data, fetal_health == "Normal")
+
+p1 <- ggplot(data_normal, aes(x = baseline.value)) +
+  # The Histogram (Blue bars)
+  geom_histogram(aes(y = ..density..), binwidth = 2, fill = "skyblue", color = "black", alpha = 0.7) +
+  # The Normal Curve (Red line) - Calculated using the Mean/SD of THIS group
+  stat_function(fun = dnorm, 
+                args = list(mean = mean(data_normal$baseline.value), 
+                            sd = sd(data_normal$baseline.value)), 
+                color = "red", size = 1.2) +
+  labs(title = "Distribution of Heart Rate: Normal Group",
+       x = "Baseline Heart Rate (bpm)", y = "Density") +
+  theme_minimal()
+
+print(p1)
+
+# Here will create Pathological Group and print
+data_patho <- subset(study_data, fetal_health == "Pathological")
+
+p2 <- ggplot(data_patho, aes(x = baseline.value)) +
+  geom_histogram(aes(y = ..density..), binwidth = 2, fill = "salmon", color = "black", alpha = 0.7) +
+  stat_function(fun = dnorm, 
+                args = list(mean = mean(data_patho$baseline.value), 
+                            sd = sd(data_patho$baseline.value)), 
+                color = "darkred", size = 1.2) +
+  labs(title = "Distribution of Heart Rate: Pathological Group",
+       x = "Baseline Heart Rate (bpm)", y = "Density") +
+  theme_minimal()
+
+print(p2)
