@@ -20,3 +20,11 @@ study_data <- raw_data %>%
 study_data$fetal_health <- factor(study_data$fetal_health, 
                                   levels = c(1, 3), 
                                   labels = c("Normal", "Pathological"))
+
+# Check that we only have two levels now
+print("Table of Counts per Group:")
+print(table(study_data$fetal_health))
+
+# Check the structure to ensure the variable type is 'Factor'
+print("Variable Structure:")
+str(study_data$fetal_health)
