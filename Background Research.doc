@@ -1,0 +1,16 @@
+2	Background research
+2.1	Research papers
+Cardiotocography (CTG) analysis has evolved from subjective visual interpretation to automated systems to improve diagnostic accuracy. Ayres-de-Campos et al. (2000) developed the 'SisPorto' system, demonstrating that automated analysis of Fetal Heart Rate (FHR) signals could match expert consensus, thereby reducing inter-observer variability. Their work laid the foundation for the dataset used in this study, emphasizing the importance of objective feature extraction over manual review.
+
+Building on this, Sahin and Subasi (2015) utilised the specific dataset analysed in this report to evaluate machine learning algorithms, such as Artificial Neural Networks and Logistic Regression. They successfully classified fetal states using 21 combined features, proving that computational models can predict pathology with high accuracy. However, their complex models often obscure the specific diagnostic weight of individual variables.
+
+Conversely, standard clinical literature suggests limitations in relying on single features. Hill and Tushar (2023) argue that while baseline heart rate is a fundamental parameter, it is generally less sensitive to hypoxia than metrics like variability or decelerations. This highlights a research gap: while machine learning models are effective, simple statistical validation is needed to determine if the baseline heart rate alone holds significant diagnostic power.
+
+2.2	Why RQ is of interest
+This Research Question is of critical interest because current literature, such as Sahin and Subasi (2015), prioritizes complex machine learning models that obscure the diagnostic weight of individual features. A significant research gap exists in isolating simple, interpretable metrics: doctors need to know if baseline heart rate alone is a reliable red flag, or if it provides a false sense of security. Investigating this determines future directions; if baseline rate proves non-significant, future studies must shift focus away from static measurements and towards multivariate analysis of dynamic features, such as heart rate variability and deceleration patterns.
+Reference list
+Ayres-de-Campos, D., Bernardes, J., Garrido, A., Marques-de-Sá, J. and Pereira-Leite, L. (2000) 'SisPorto 2.0: A Program for Automated Analysis of Cardiotocograms', Journal of Maternal-Fetal Medicine, 9(5), pp. 311-318.
+
+Hill, M. and Tushar, P. (2023) Fetal Monitoring. Treasure Island (FL): StatPearls Publishing. Available at: https://www.ncbi.nlm.nih.gov/books/NBK589699/ (Accessed: 2 December 2025).
+
+Sahin, H. and Subasi, A. (2015) 'Classification of Fetal State from the Cardiotocogram Recordings using ANN and Simple Logistic', Applied Soft Computing, 37, pp. 1-20.
