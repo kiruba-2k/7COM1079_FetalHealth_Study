@@ -39,4 +39,11 @@ An independent samples t-test was chosen where we compared the heart rates of th
 4.2	The null hypothesis is rejected /not rejected based on the p-value 
 It was found that there was no significant difference in baseline heart rate between the groups ( t (214) = 0.39, p =.694). Since the p-value exceeds the 0.05 level significantly, we do not reject the null hypothesis. This means that heart rate is not a good predictor of fetal pathology. To be sure that these outcomes were not a distribution anomaly, we did a repeat Mann-Whitney U test, which validated this non-significant result again (p =.502).
  
+6	Conclusions
+6.1	Results explained
+We statistically calculated that the mean heart rate of healthy fetuses was very close to that of pathological fetuses in terms of mean ( M = 131.98bpm) and standard deviation ( SD = 0.528). The p-value obtained on the independent t-test was 0.694 that is well above the usual significance cutoff. Consequently, we do not reject the null hypothesis. This proves that in this data there is no significant difference in baseline heart rate depending on fetal health status..
+6.2	Interpretation of the results 
+These findings have implications on our Research Question by suggesting that baseline heart rate is an inappropriate predictor of fetal health on its own. To the general medical community, it indicates that a normal rate (110160 bpm) is not the only reassuring element. Instead of diagnostic emphasis should be on dynamic patterns, including variability and decelerations, since a troubled unborn baby may frequently be able to hold a steady baseline to the final stages of decompensation.
+6.3	Reasons and/or implications for future work, limitations of your study
+The major weakness of our study was that the imbalance between the two sets of data was huge, as the number of pathological cases (N=176) was significantly outnumbered by the number of normal ones (N=1655). The research on the subject should not be confined to examining individual variables. Rather than that, it would be far more accurate to use multivariate analysis to analyse the interaction of baseline heart rate with uterine contractions to give a more comprehensive view of complex physiology of fetal distress.
 
