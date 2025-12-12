@@ -33,4 +33,10 @@ The red line shows the theoretical ideal distribution of normal distribution of 
 
 3.3	Useful information for the data understanding
 The standard bell-shaped characteristic of the normal distribution is used in the Normal group. The group of the pathological is multimodal (more than one peak), probably because of the reduced sample size (N=176). But, at least in terms of visual indicators, both distributions are concentrated around the same value (average is around 132 bpm), indicating that the means differ by no apparent amount between the groups. 
+4	Analysis
+4.1	Statistical test used to test the hypotheses and output 
+An independent samples t-test was chosen where we compared the heart rates of the two different groups. As this is a continuous dependent variable, this parametric test was the most logical. Although the Shapiro-Wilk test raised the non-normality alarm (which is common with large samples (N=1655)) our visual examination of the histograms revealed that the data was bell-shaped enough to continue. Moreover, the test of equal variances performed by Levene was found to have no differences between the variances of the data (p >.05), which proved compliance with the requirements predetermined by the validity of the analysis.
+4.2	The null hypothesis is rejected /not rejected based on the p-value 
+It was found that there was no significant difference in baseline heart rate between the groups ( t (214) = 0.39, p =.694). Since the p-value exceeds the 0.05 level significantly, we do not reject the null hypothesis. This means that heart rate is not a good predictor of fetal pathology. To be sure that these outcomes were not a distribution anomaly, we did a repeat Mann-Whitney U test, which validated this non-significant result again (p =.502).
+ 
 
