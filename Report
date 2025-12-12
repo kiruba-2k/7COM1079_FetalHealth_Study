@@ -1,0 +1,16 @@
+Introduction
+Problem statement and research motivation: 
+Fetal health is monitored through Cardiotocography (CTG) charts, but interpreting these charts remains a challenge. Even experienced doctors misinterpate them, which potentially leads to incorrect diagnoses or unnecessary surgeries (Ayres-de-Campos et al., 2000). The recent advancement in AI models can predict the results through large number of variables but it remains unclear if fundamental markers work on their own. In this study, we investigate whether the baseline heart rate of healthy and pathological fetuses differs significantly. Our goal is to determine if this simple metric acts as a reliable standalone indicator, or if relying on it provides a false sense of security.
+The data set: 
+In this study, we utilized the dataset named "Fetal Health Classification". In this dataset expert obstetricians categorized the 2,126 CTG records. We filter out the ambiguous ‘Suspect’ class to ensure a distinct physiological comparison. The resultant focused dataset comparing 1,655 'Normal' cases against 176 'Pathological' ones. Key features examined include baseline heart rate and uterine contractions, allowing us to isolate specific differences between healthy and distressed fetuses.
+Research question:
+In this study, we are addressing the following research question:
+Is there a statistically significant difference in mean baseline heart rate between 'Normal' and 'Pathological' fetuses? 
+Here, baseline heart rate (bpm) is dependent variable and health category (Normal vs. Pathological) is independent variable,  which help us to test for clear physiological distinctions.
+Null hypothesis and alternative hypothesis (H0/H1):
+We established formal statistical hypotheses to test for a difference in means.
+Null Hypothesis (H0): There is no significant difference in the mean baseline heart rate between the Normal and Pathological groups.
+	Notation: µNormal=µPathological
+Alternative Hypothesis (H1): There is a statistically significant difference in the means between the two groups
+	Notation: µNormal ≠ µPathological
+We utilized a two-tailed test with a standard significance level (α) of 0.05. We will reject the null hypothesis only if the p-value falls below this threshold.
