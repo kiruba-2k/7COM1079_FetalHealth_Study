@@ -14,3 +14,12 @@ Null Hypothesis (H0): There is no significant difference in the mean baseline he
 Alternative Hypothesis (H1): There is a statistically significant difference in the means between the two groups
 	Notation: µNormal ≠ µPathological
 We utilized a two-tailed test with a standard significance level (α) of 0.05. We will reject the null hypothesis only if the p-value falls below this threshold.
+
+
+2	Background research
+2.1	Research papers
+In this study, we reviewed three relevant research papers to understand the context of analysis. 
+Ayres et al. (2000) was pioneers who developed a system named 'SisPorto' which automate the CTG interpretation. They demonstrated that automated feature extraction could match expert consensus and directly produced the dataset. Building on this, Sahin and Subasi (2015) applied advanced Machine Learning to this specific data and achieved high classification accuracy using Neural Networks. Their complex models combine over 20 variables. This black box approach obscures the diagnostic weight of individual features, making it difficult to know which specific metrics are driving the predictions.  Hill and Tushar (2023), on the contrary, offer a clinical reality test. They claim that hypoxia is usually less responsive to baseline heart rate as compared to dynamic data such as variability. The lack of a significant research gap is observed in this literature: although simple features have to be statistically validated when complex AI models ingest all information, they do so in an indiscriminate manner. This is the approach that we take in our study where we test whether the first check in a clinical setting is more likely to have independent diagnostic power when it is solely the baseline rate.
+2.2	Why RQ is of interest
+In this study we addressed a critical gap between complex machine learning and practical clinical utility. Although such models as those by Sahin and Subasi (2015) are effective in predicting results, they hide the usefulness of other features. Clinicians must understand whether or not baseline heart rate is a valid standalone red flag, or whether a false sense of security is given by use of a baseline heart rate. Our research will identify the way to go next: in case the baseline rate is statistically inconsequential, subsequent studies will have to be centered on dynamic measures, such as heart rate variability, rather than on fixed ones.
+ 
